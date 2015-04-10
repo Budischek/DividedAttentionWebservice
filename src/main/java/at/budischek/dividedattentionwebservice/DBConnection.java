@@ -10,6 +10,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 
 import at.budischek.dividedattentionwebservice.HibernateSessionManager;
+import at.budischek.dividedattentionwebservice.model.*;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -68,6 +69,35 @@ public class DBConnection {
 		 return tests;
 	}
 	
+	public ArrayList<MusterDistance> queryMusterDistances() {
+		Query query = session.createQuery("from MusterDistance");
+		 List list = query.list();
+		 ArrayList<MusterDistance> musterdistances = (ArrayList<MusterDistance>) list;
+		 return musterdistances;
+	}
+	
+	public ArrayList<MusterReaction> queryMusterReactions() {
+		Query query = session.createQuery("from MusterReaction");
+		 List list = query.list();
+		 ArrayList<MusterReaction> musterreactions = (ArrayList<MusterReaction>) list;
+		 return musterreactions;
+	}
+	
+	public ArrayList<Cause> queryCauses() {
+		Query query = session.createQuery("from Cause");
+		 List list = query.list();
+		 ArrayList<Cause> causes = (ArrayList<Cause>) list;
+		 return causes;
+	}
+	
+	
+	public ArrayList<Muster> queryMuster() {
+		Query query = session.createQuery("from Muster");
+		 List list = query.list();
+		 ArrayList<Muster> musters = (ArrayList<Muster>) list;
+		 return musters;
+	}
+	
 	public ArrayList<TestDistance> queryTestDistances() {
 		Query query = session.createQuery("from TestDistance");
 		 List list = query.list();
@@ -82,4 +112,38 @@ public class DBConnection {
 		 return testreactions;
 	}
 
+	public ArrayList<Normkollektiv> queryNormkollektiv() {
+		Query query = session.createQuery("from Normkollektiv");
+		 List list = query.list();
+		 ArrayList<Normkollektiv> normkollektivs = (ArrayList<Normkollektiv>) list;
+		 return normkollektivs;
+	}
+	
+	public ArrayList<Pfad> queryPfad() {
+		Query query = session.createQuery("from Pfad");
+		 List list = query.list();
+		 ArrayList<Pfad> pfads = (ArrayList<Pfad>) list;
+		 return pfads;
+	}
+	
+	public ArrayList<Punktbewegung> queryPunktbewegung() {
+		Query query = session.createQuery("from Punktbewegung");
+		 List list = query.list();
+		 ArrayList<Punktbewegung> punktbewegungs = (ArrayList<Punktbewegung>) list;
+		 return punktbewegungs;
+	}
+	
+	public ArrayList<Storyboard> queryStoryboard() {
+		Query query = session.createQuery("from Storyboard");
+		 List list = query.list();
+		 ArrayList<Storyboard> storyboards = (ArrayList<Storyboard>) list;
+		 return storyboards;
+	}
+	
+	public ArrayList<StoryboardAction> queryStoryboardAction() {
+		Query query = session.createQuery("from Storyboard");
+		 List list = query.list();
+		 ArrayList<StoryboardAction> storyboardactions = (ArrayList<StoryboardAction>) list;
+		 return storyboardactions;
+	}
 }

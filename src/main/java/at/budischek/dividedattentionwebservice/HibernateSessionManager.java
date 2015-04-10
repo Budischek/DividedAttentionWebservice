@@ -6,6 +6,10 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import at.budischek.dividedattentionwebservice.model.Test;
+import at.budischek.dividedattentionwebservice.model.TestDistance;
+import at.budischek.dividedattentionwebservice.model.TestReaction;
+
 public class HibernateSessionManager {
 
 	private static final SessionFactory sessionFactory = buildSessionFactory();

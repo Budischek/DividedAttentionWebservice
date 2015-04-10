@@ -1,8 +1,4 @@
-at\budischek\dividedattentionwebservice\TestReaction.class
-at\budischek\dividedattentionwebservice\DBSync.class
 at\budischek\dividedattentionwebservice\DBConnection.class
-at\budischek\dividedattentionwebservice\Run.class
-at\budischek\dividedattentionwebservice\Hello.class
 at\budischek\dividedattentionwebservice\HibernateSessionManager.class
-at\budischek\dividedattentionwebservice\Test.class
-at\budischek\dividedattentionwebservice\TestDistance.class
+at\budischek\dividedattentionwebservice\DBSync.class
+at\budischek\dividedattentionwebservice\Run.class

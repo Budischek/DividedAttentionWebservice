@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+ <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+ <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+ <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dividedattention</property>
+ <property name="hibernate.connection.username">root</property>
+ <property name="hibernate.connection.password">root</property>
+ <property name="show_sql">true</property>
+ <mapping class="at.budischek.dividedattentionwebservice.model.Test" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.TestDistance" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.TestReaction" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.Muster" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.MusterDistance" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.MusterReaction" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.Cause" />
+ <mapping class="at.budischek.dividedattentionwebservice.model.TestMuster" />
+</session-factory>
+</hibernate-configuration>
